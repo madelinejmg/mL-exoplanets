@@ -46,8 +46,8 @@ Traditional vetting of transit candidates relies on manual inspection, which is 
 - **Source:** Kepler Objects of Interest (KOI) catalog [5]  
 - **Target population:** M-dwarf host stars  
 - **Labels:**
-  - `1` — confirmed or candidate exoplanet  
-  - `0` — astrophysical false positive (e.g., eclipsing binaries)  
+  - `1` - confirmed or candidate exoplanet  
+  - `0` - astrophysical false positive (e.g., eclipsing binaries)  
 - **Sample size:** 115 unique stellar systems  
   - 37 planets  
   - 78 false positives  
@@ -69,7 +69,7 @@ Processing steps:
 
 The final input to the CNN has shape: `(N_stars, 2048, 1)`
 
-No flare removal, clipping, or additional feature engineering is applied, by design, in order to preserve the raw shape information.
+No flare removal, clipping, or additional feature is applied, by design, in order to preserve the raw shape information.
 
 ## Model Architecture
 
